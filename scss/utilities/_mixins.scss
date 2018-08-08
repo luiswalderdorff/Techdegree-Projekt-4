@@ -1,0 +1,24 @@
+// Media Queries
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Flexbox Settings
+@mixin flexy(
+  $disp: flex,
+  $dir: column,
+  $wrap: wrap,
+  $just: center){
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+// Rounded Corners
+
+@mixin rounded {
+  border-radius: 15px;
+}

@@ -1,0 +1,13 @@
+.form {
+  @include flexy;
+}
+
+.form__label--hidden {
+  visibility: hidden;
+}
+
+.form__input {
+  border: none;
+  border-bottom: $primary-background 5px solid;
+  @include rounded;
+}

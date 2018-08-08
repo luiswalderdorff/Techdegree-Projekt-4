@@ -1,0 +1,29 @@
+.container {
+
+}
+
+.link {
+  color: $primary-background;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blockquote {
+  margin: 25px 30px;
+  border-left: $primary-background solid 10px;
+  padding-left: 10px;
+  font-size: 25px;
+  color: $primary-color;
+  @include rounded;
+}
+
+// round border corners
+
+.headline--primary {
+  margin: 25px 30px;
+  color: $primary-background;
+}
+
+.headline--secondary {
+  color: $primary-color;
+}

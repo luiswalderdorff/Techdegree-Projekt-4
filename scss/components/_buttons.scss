@@ -1,0 +1,30 @@
+.btn--default {
+  margin-top: 10px;
+  border: none;
+  background-color: $primary-background;
+  color: $secondary-color;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @include rounded;
+}
+
+
+.btn--success {
+
+}
+
+.btn--error {
+
+}
+
+.btn--warning {
+
+}
+
+.btn--info {
+
+}
+
+.theme__colors {
+
+}
