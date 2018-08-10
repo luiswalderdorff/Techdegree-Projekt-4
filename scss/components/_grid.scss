@@ -5,6 +5,16 @@
 
 .grid__row {
   @include flexy;
+  margin-top: 45px;
+  &.theme__colors {
+    width: 90%;
+    color: $primary-color;
+  }
+  @include desktop {
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 .grid__col--2 {
@@ -13,28 +23,68 @@
 
 .grid__col--3 {
   align-self: center;
+  &.theme__colors{
+  background-color: lightgrey;
+  color: $primary-color;
+  @include gridcol;
+  }
 }
 
 .grid__col--4 {
   margin-top: 15px;
+  &.theme__colors {
+  background-color: rgba($primary-background, 0.6);
+  color: $primary-color;
+  @include gridcol;
+  @include desktop {
+    flex-basis: 50%;
+  }
+  }
 }
 
 .grid__col--5 {
-
+  @include button;
+  background-color: rgba(green, 0.6);
+  color: $primary-color;
+  @include gridcol;
 }
 
 .grid__col--6 {
-
+  @include flexy;
+  &.theme__colors {
+  background-color: rgba($primary-background, 0.6);
+  color: $primary-color;
+  @include gridcol;
+  }
 }
 
 .grid__col--7 {
-
+  &.theme__colors {
+  background-color: pink;
+  color: $primary-color;
+  @include gridcol;
+}
 }
 .grid__col--8 {
-
+  &.theme__colors {
+    @include button;
+    background-color: rgba(244, 6, 184, 0.6);
+    color: $primary-color;
+    @include gridcol;
+  }
+  @include desktop {
+    flex-basis: 50%;
+  }
 }
 
 .grid__col--9 {
+  @include desktop {
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1.2em;
+    padding-right: 10%;
+    align-self: center;
+  }
 
 }
 
@@ -47,14 +97,18 @@
 }
 
 .grid__col--12 {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  @include flexy;
+  &.theme__colors {
+  background-color: rgba($primary-background, 0.4);
+  color: $primary-color;
+  @include button;
+  @include gridcol;
+  }
+  button {
+    margin-bottom: 15px;
+  }
 }
 
 .centered {
-
-}
-
-.theme__colors {
 
 }

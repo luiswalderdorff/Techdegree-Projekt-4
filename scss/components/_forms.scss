@@ -9,5 +9,6 @@
 .form__input {
   border: none;
   border-bottom: $primary-background 5px solid;
-  @include rounded;
+  font-weight: bold;
+  padding: 10px;
 }

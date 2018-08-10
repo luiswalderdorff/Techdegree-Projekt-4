@@ -1,10 +1,15 @@
 .img--logo {
   margin-top: 15px;
   align-self: center;
+  @include desktop {
+    align-self: flex-start;
+  }
 }
 
 .img--frame {
-
+  padding: 10px;
+  border: rgba($primary-color, .5) solid 0.02px;
+  margin-top: 15px;
 }
 
 .img--avatar {

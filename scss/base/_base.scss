@@ -5,10 +5,14 @@
 }
 
 ul {
-
+  @include desktop {
+    @include flexy;
+  }
 }
 
 p {
   font-family: $primary-font;
   color: $primary-color;
+  width: 90%;
+  margin: auto;
 }

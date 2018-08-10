@@ -15,15 +15,20 @@
   font-size: 25px;
   color: $primary-color;
   @include rounded;
+  font-style: italic;
 }
 
 // round border corners
 
 .headline--primary {
-  margin: 25px 30px;
+  margin: 25px 40px 25px 30px;
   color: $primary-background;
 }
 
 .headline--secondary {
-  color: $primary-color;
+  color: rgba($primary-color, 0.8);
+  font-weight: lighter;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
 }
