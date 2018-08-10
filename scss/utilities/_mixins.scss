@@ -15,10 +15,9 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
-  @include desktop {
-    flex-direction: row;
-  }
 }
+
+
 
 // Rounded Corners
 

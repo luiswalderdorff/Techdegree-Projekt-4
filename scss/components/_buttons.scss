@@ -4,26 +4,29 @@
   color: $secondary-color;
   @include button;
   @include rounded;
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 
 .btn--success {
-  background-color: green;
+  background-color: lighten(green, 10%);
   color: $secondary-color;
 }
 
 .btn--error {
-  background-color: rgb(244, 6, 184);
+  background-color: lighten(rgb(244, 6, 184), 10%);
   color: $secondary-color;
 }
 
 .btn--warning {
-  background-color: red;
+  background-color: lighten(red, 10%);
   color: $secondary-color;
 }
 
 .btn--info {
-  background-color: rgb(92, 90, 126);
+  background-color: lighten(rgb(92, 90, 126), 10%);
   color: $secondary-color;
 }
 
@@ -34,4 +37,7 @@
   @include rounded;
   width: 90%;
   align-self: center;
+  @include desktop {
+    margin: 0 35px;
+  }
 }

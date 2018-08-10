@@ -1,6 +1,7 @@
 // Flexbox
 .container {
-
+  width: 90%;
+  margin: auto;
 }
 
 .grid__row {
@@ -11,9 +12,9 @@
     color: $primary-color;
   }
   @include desktop {
-    justify-content: space-between;
-    margin-left: 15%;
-    margin-right: 15%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
@@ -36,9 +37,13 @@
   background-color: rgba($primary-background, 0.6);
   color: $primary-color;
   @include gridcol;
-  @include desktop {
-    flex-basis: 50%;
   }
+  @include desktop {
+    flex-basis: 33%;
+    @include flexy($dir: column);
+    button {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -47,6 +52,9 @@
   background-color: rgba(green, 0.6);
   color: $primary-color;
   @include gridcol;
+  @include desktop {
+    flex-basis: 33%;
+  }
 }
 
 .grid__col--6 {
@@ -55,15 +63,23 @@
   background-color: rgba($primary-background, 0.6);
   color: $primary-color;
   @include gridcol;
+  @include desktop {
+    align-self: center;
+    img {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
   }
 }
 
 .grid__col--7 {
-  &.theme__colors {
-  background-color: pink;
+  background-color: darken(pink, 5%);
   color: $primary-color;
   @include gridcol;
-}
+  @include desktop {
+    flex-basis: 66%;
+  }
 }
 .grid__col--8 {
   &.theme__colors {
@@ -73,7 +89,8 @@
     @include gridcol;
   }
   @include desktop {
-    flex-basis: 50%;
+
+    flex-basis: 66%;
   }
 }
 
@@ -106,6 +123,13 @@
   }
   button {
     margin-bottom: 15px;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 

@@ -11,4 +11,7 @@
   border-bottom: $primary-background 5px solid;
   font-weight: bold;
   padding: 10px;
+  @include desktop {
+    align-self: center;
+  }
 }

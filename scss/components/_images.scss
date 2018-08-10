@@ -3,6 +3,9 @@
   align-self: center;
   @include desktop {
     align-self: flex-start;
+    form {
+      align-self: center;
+    }
   }
 }
 
@@ -14,4 +17,5 @@
 
 .img--avatar {
   align-self: center;
+
 }
